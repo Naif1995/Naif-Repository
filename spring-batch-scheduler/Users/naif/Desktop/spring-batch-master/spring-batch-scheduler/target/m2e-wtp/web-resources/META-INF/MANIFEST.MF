@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-batch-scheduler
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: naif
+Implementation-Vendor-Id: com.codenotfound
+Build-Jdk: 1.8.0_111
+Implementation-URL: https://codenotfound.com/spring-batch-scheduler-ex
+ ample.html
+Created-By: Maven Integration for Eclipse
+
