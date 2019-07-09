@@ -8,9 +8,9 @@
 
         <!-- connect to database -->
   <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-	<property name="driverClassName" value="org.postgresql.Driver" />
-	<property name="url" value="jdbc:postgresql://localhost:5432/sample_db" />
-	<property name="username" value="postgres" />
+	<property name="driverClassName" value="org.h2.Driver" />
+	<property name="url" value="jdbc:h2:~/test" />
+	<property name="username" value="sa" />
 	<property name="password" value="" />
   </bean>
   
