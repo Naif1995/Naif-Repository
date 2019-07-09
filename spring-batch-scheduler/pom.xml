@@ -6,7 +6,7 @@
 
   <groupId>com.codenotfound</groupId>
   <artifactId>spring-batch-scheduler</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>war</packaging>
 
   <name>spring-batch-scheduler</name>
@@ -32,18 +32,31 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-batch</artifactId>
+            <exclusions>
+		<exclusion>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</exclusion>
+	</exclusions>
         </dependency>
-        
-        	<!-- MySQL database driver -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			</dependency>
+     
 			
 			<dependency>
     		<groupId>com.h2database</groupId>
     		<artifactId>h2</artifactId>
 			</dependency>
+			
+			
+	<dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc6</artifactId>
+    <version>11.2.0.3</version>
+	</dependency>
+	
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-log4j2</artifactId>
+</dependency>
 
     </dependencies>
  
@@ -55,12 +68,13 @@
             </plugin>
         </plugins>
     </build>
+    
+    
  
-    <repositories>
-        <repository>
-            <id>repository.spring.release</id>
-            <name>Spring GA Repository</name>
-            <url>http://repo.spring.io/release</url>
-        </repository>
-    </repositories>
-</project>
+	<repositories>
+    <repository>
+      <id>codelds</id>
+      <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+    </repository>
+ 	 </repositories>
+	</project>

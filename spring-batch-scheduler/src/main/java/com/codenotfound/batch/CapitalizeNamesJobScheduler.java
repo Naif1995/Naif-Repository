@@ -27,8 +27,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CapitalizeNamesJobScheduler {
 
-  private static final Logger LOGGER =
-      LoggerFactory.getLogger(CapitalizeNamesJobScheduler.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(CapitalizeNamesJobScheduler.class);
 
   @Autowired
   private JobLauncher jobLauncher;
